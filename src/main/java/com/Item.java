@@ -5,9 +5,9 @@ import java.text.DecimalFormat;
 
 public class Item {
     private final double num;
-    /* Add a field "position" in order to customize the color of the number depending on the position */
-    private static final DecimalFormat df = new DecimalFormat("#.##########");
+    private static final DecimalFormat df;
     static {
+        df = new DecimalFormat("#.##########");
         df.setRoundingMode(RoundingMode.DOWN);
     }
 
